@@ -26,7 +26,10 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <175>;
+            hold-while-undecided;
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <7 8 9 10 11 12 13 21 22 23 24 25 26 27 37 38 39 40 41 42 43 44 45 53 54 55 56 57 58 59 68 69 70 71 72 73 74 75>;
         };
 
         HomeRowMode_Right: HomeRowMode_Right {
@@ -35,7 +38,10 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <175>;
+            hold-trigger-key-positions = <0 1 2 3 4 5 6 14 15 16 17 18 19 20 28 29 30 31 32 33 34 35 36 46 47 48 49 50 51 52 60 61 62 63 64 65 66 67>;
+            hold-while-undecided;
+            hold-trigger-on-release;
         };
 
         HomeRowMod_Left_TapPref: HomeRowMod_Left_TapPref {
@@ -71,11 +77,11 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp EQUAL         &kp N1          &kp N2          &kp N3       &kp N4        &kp N5  &tog 1                                                                             &mo 3                        &kp N6  &kp N7             &kp N8        &kp N9           &kp N0              &kp MINUS
-&kp GRAVE         &kp Q           &kp W           &kp E        &kp R         &kp T   &kp DELETE                                                                         &tog 2                       &kp Y   &kp U              &kp I         &kp O            &kp P               &kp BSLH
-&kp ESC           &hm A LEFT_GUI  &hm S LEFT_ALT  &hm D LCTRL  &hm F LSHIFT  &kp G   &kp LA(LC(LG(LEFT_SHIFT)))  &kp LCTRL  &kp LALT           &kp LGUI  &kp RCTRL      &kp RA(RC(RG(RIGHT_SHIFT)))  &kp H   &hm J RIGHT_SHIFT  &hm K RCTRL   &hm L RIGHT_ALT  &hm SEMI RIGHT_GUI  &kp SQT
-&kp LEFT_BRACKET  &kp Z           &kp X           &kp C        &kp V         &kp B                                          &kp PAGE_UP        &kp HOME                                              &kp N   &kp M              &kp COMMA     &kp DOT          &kp FSLH            &kp RIGHT_BRACKET
-&mo 2             &kp GRAVE       &kp CAPS        &kp LEFT     &kp RIGHT             &kp ENTER                   &kp TAB    &kp PAGE_DOWN      &kp END   &kp BACKSPACE  &kp SPACE                            &kp DOWN           &kp UP_ARROW  &kp LBKT         &kp RBKT            &mo 2
+&kp EQUAL         &kp N1                               &kp N2                               &kp N3                            &kp N4                                 &kp N5  &tog 1                                                                             &mo 3                        &kp N6  &kp N7                                   &kp N8                             &kp N9                                 &kp N0                                         &kp MINUS
+&kp GRAVE         &kp Q                                &kp W                                &kp E                             &kp R                                  &kp T   &kp DELETE                                                                         &tog 2                       &kp Y   &kp U                                    &kp I                              &kp O                                  &kp P                                          &kp BSLH
+&kp ESC           &HomeRowMod_Left_TapPref LEFT_GUI A  &HomeRowMod_Left_TapPref LEFT_ALT S  &HomeRowMod_Left_TapPref LCTRL D  &HomeRowMod_Left_TapPref LEFT_SHIFT F  &kp G   &kp LA(LC(LG(LEFT_SHIFT)))  &kp LCTRL  &kp LALT           &kp LGUI  &kp RCTRL      &kp RA(RC(RG(RIGHT_SHIFT)))  &kp H   &HomeRowMod_Right_TapPref RIGHT_SHIFT J  &HomeRowMod_Right_TapPref RCTRL K  &HomeRowMod_Right_TapPref RIGHT_ALT L  &HomeRowMod_Right_TapPref RIGHT_GUI SEMICOLON  &kp SQT
+&kp LEFT_BRACKET  &kp Z                                &kp X                                &kp C                             &kp V                                  &kp B                                          &kp PAGE_UP        &kp HOME                                              &kp N   &kp M                                    &kp COMMA                          &kp DOT                                &kp FSLH                                       &kp RIGHT_BRACKET
+&mo 2             &kp GRAVE                            &kp CAPS                             &kp LEFT                          &kp RIGHT                                      &kp ENTER                   &kp TAB    &kp PAGE_DOWN      &kp END   &kp BACKSPACE  &kp SPACE                            &kp DOWN                                 &kp UP_ARROW                       &kp LBKT                               &kp RBKT                                       &mo 2
             >;
         };
 
